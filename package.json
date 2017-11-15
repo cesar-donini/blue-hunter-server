@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/cesar-donini/blue-hunter-server#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "bluebird": "^3.5.1",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.2"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.18",
     "@types/express": "^4.0.39",
+    "@types/mongoose": "^4.7.27",
     "nodemon": "^1.12.1"
   }
 }
