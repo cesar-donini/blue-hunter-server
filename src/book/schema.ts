@@ -6,6 +6,6 @@ const bookSchema = new Mongoose.Schema({
     description : String,
 	publishing_house : String,
 	author : authorSchema
-});
+}, { versionKey: false });
 
 export const BookModel = Mongoose.model('Book', bookSchema);

@@ -5,6 +5,6 @@ export const authorSchema = new Mongoose.Schema({
 	gender : String,
 	mail : String,
 	bornDate : Date
-});
+}, { versionKey: false });
 
 export const AuthorModel = Mongoose.model('Author', authorSchema);

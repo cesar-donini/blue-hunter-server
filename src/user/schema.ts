@@ -5,6 +5,6 @@ const userSchema = new Mongoose.Schema({
 	gender : String,
 	mail : String,
 	bornDate : Date
-});
+}, { versionKey: false });
 
 export const UserModel = Mongoose.model('User', userSchema);
