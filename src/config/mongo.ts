@@ -1,6 +1,7 @@
 import * as Mongoose from 'mongoose';
 import * as bluebird from 'bluebird';
 import { connection } from 'mongoose';
+import * as env from '../config/environments'
 
 export const inicializeDB = () => {
 const db = Mongoose.connection;
@@ -13,14 +14,13 @@ const db = Mongoose.connection;
   db.once('open', () => console.info("Connected to MongoDB"));
 
   const configMongo = {
-    db : 'blue-hunter',
-    server: 'localhost:1888',
-    // user: 'donini',
-    // pass: 'donini',
+    db : env.DB_NAME,
+    user: env.DB_USER,
+    pass: env.DB_PASSWORD,
     poolSize: 10,
     promiseLibrary: bluebird,
     useMongoClient: true
   }
 
-  Mongoose.connect("mongodb://localhost:1888/blue-hunter", configMongo);
+  Mongoose.connect(env.DB_CONNECTION_STRING, configMongo);
 }

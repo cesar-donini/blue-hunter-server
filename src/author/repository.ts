@@ -1,5 +1,5 @@
 import { IAuthor } from './model';
-import { UserModel, AuthorModel } from '../mongo/schemas';
+import { AuthorModel } from './schema';
 
 class AuthorRepository {
 

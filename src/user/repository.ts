@@ -1,5 +1,5 @@
 import { IUser } from './model';
-import { UserModel } from '../mongo/schemas';
+import { UserModel } from './schema';
 
 class UserRepository {
 
