@@ -1,0 +1,19 @@
+{
+  "name": "blue-hunter-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesar-donini/blue-hunter-server.git"
+  },
+  "author": "César Donini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesar-donini/blue-hunter-server/issues"
+  },
+  "homepage": "https://github.com/cesar-donini/blue-hunter-server#readme"
+}
