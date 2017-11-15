@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { UserController } from './controller';
+import { userController } from './controller';
 
 export const userRouter = Router();
 
-const userController = new UserController();
+userRouter.get('/user/by-name/:name', userController.findByName);
 
-userRouter.use('/user/by-name/:userName', userController.findByUserName);
+userRouter.post('/user', userController.save);
