@@ -8,6 +8,11 @@ class UserController {
         resp.status(200).json(users);
     }
 
+    public async find(req: Request, resp: Response) {
+        const users = await userRepository.find();
+        resp.status(200).json(users);
+    }
+
     public async save(req: Request, resp: Response) {
         const user = await userRepository.save(req.body);
         resp.status(201).json(user);

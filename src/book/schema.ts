@@ -1,11 +1,13 @@
 import * as Mongoose from "mongoose";
-import { authorSchema } from '../author/schema';
 
 const bookSchema = new Mongoose.Schema({
     title : String,
+    yearPublished: Number,
     description : String,
 	publishing_house : String,
-	author : authorSchema
+	author : String,
+    price: String,
+    rating: String
 }, { versionKey: false });
 
 export const BookModel = Mongoose.model('Book', bookSchema);

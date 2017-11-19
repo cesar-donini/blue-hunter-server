@@ -1,10 +1,12 @@
 import * as Mongoose from "mongoose";
 
 const userSchema = new Mongoose.Schema({
-    name : String,
+    fullName : String,
 	gender : String,
+	age: Number,
 	mail : String,
-	bornDate : Date
+	phone: String,
+	username: String
 }, { versionKey: false });
 
 export const UserModel = Mongoose.model('User', userSchema);

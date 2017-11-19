@@ -1,13 +1,11 @@
 import {Document} from 'mongoose';
 
-export interface IPeople extends Document {
-    _id : String;
-	name : String;
+export interface IUser extends Document {
+	_id : String;
+	fullName : String;
 	gender : String;
+	age: Number;
 	mail : String;
-	bornDate : Date;
-}
-
-export interface IUser extends IPeople {
-
+	phone: String;
+	username: String;
 }

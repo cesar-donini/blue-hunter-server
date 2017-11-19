@@ -1,10 +1,11 @@
 import { Document } from 'mongoose';
-import { IPeople } from "../user/model";
-import { IAuthor } from '../author/model';
 
 export interface IBook extends Document {
     title : String;
+    yearPublished: Number;
     description : String;
 	publishing_house : String;
-	author : IAuthor;
+	author : String;
+    price: String;
+    rating: String;
 }

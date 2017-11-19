@@ -8,14 +8,19 @@ class BookController {
         resp.status(201).json(book);
     }
 
+    public async find(req: Request, resp: Response) {
+        const books = await bookRepository.find();
+        resp.status(200).json(books); 
+    }
+
     public async findByAuthorName(req: Request, resp: Response) {
         const books = await bookRepository.findByAuthorName(req.params.authorName);
-        resp.status(200).json(books);
+        resp.status(200).json(books); 
     }
 
     public async findByTitle(req: Request, resp: Response) {
         const books = await bookRepository.findByTitle(req.params.title);
-        resp.status(200).json(books);
+        resp.status(200).json(books); 
     }
 
 }

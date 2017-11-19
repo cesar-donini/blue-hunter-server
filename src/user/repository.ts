@@ -10,12 +10,20 @@ class UserRepository {
         return users;
     }
 
+    public async find() : Promise<IUser[]> {
+        const users = <IUser[]> await UserModel.find();
+        return users;
+    }
+
     public async save(user: IUser) : Promise<IUser> {
         user = <IUser> await new UserModel({
-            name : user.name,
+            _id : user._id,
+            fullName : user.fullName,
             gender : user.gender,
+            age: user.age,
             mail : user.mail,
-            bornDate : user.bornDate
+            phone: user.phone,
+            username: user.username
         }).save();
         return user;
     }
