@@ -5,7 +5,7 @@ class UserRepository {
 
     public async findByName(name: string) : Promise<IUser[]> {
         const users = <IUser[]> await UserModel.find({
-            "name" : {$regex : `.*${name}.*`, $options: 'i'}
+            "fullName" : {$regex : `.*${name}.*`, $options: 'i'}
         });
         return users;
     }
@@ -21,7 +21,7 @@ class UserRepository {
             fullName : user.fullName,
             gender : user.gender,
             age: user.age,
-            mail : user.mail,
+            email : user.email,
             phone: user.phone,
             username: user.username
         }).save();

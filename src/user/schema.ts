@@ -4,7 +4,7 @@ const userSchema = new Mongoose.Schema({
     fullName : String,
 	gender : String,
 	age: Number,
-	mail : String,
+	email : String,
 	phone: String,
 	username: String
 }, { versionKey: false });
