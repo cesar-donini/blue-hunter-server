@@ -1,6 +1,7 @@
 import { Document } from 'mongoose';
 
 export interface IBook extends Document {
+    _id: String;
     title : String;
     yearPublished: Number;
     description : String;
