@@ -1,24 +1,23 @@
 # Se você for um Dev Backend
 
-## Build
+## Produção
 
-### Para buildar a aplicação com Docker Compose:
+### Build
 ```
 docker-compose build
 ```
 	
-## Execução
-
-### Para executar a aplicação com Docker Compose:
+### Execução
 ```
 docker-compose up -d
 ```
 
-### Para executar a aplicação sem Docker:
+## Local (desenvolvimento)
+
+### Execução
 ```
 npm start
 ```
-	
 
 ## Decisões técnicas
 
