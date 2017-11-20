@@ -8,4 +8,5 @@ export interface IBook extends Document {
 	author : String;
     price: String;
     rating: String;
+    image: String;
 }

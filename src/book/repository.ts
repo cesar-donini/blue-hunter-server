@@ -30,7 +30,8 @@ class BookRepository {
             publishing_house : book.publishing_house,
             author : book.author,
             price: book.price,
-            rating: book.rating
+            rating: book.rating,
+            image: book.image
         }).save();
         return book;
     }

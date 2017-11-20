@@ -7,7 +7,8 @@ const bookSchema = new Mongoose.Schema({
 	publishing_house : String,
 	author : String,
     price: String,
-    rating: String
+    rating: String,
+    image: String
 }, { versionKey: false });
 
 export const BookModel = Mongoose.model('Book', bookSchema);

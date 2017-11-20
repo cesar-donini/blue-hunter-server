@@ -34,11 +34,11 @@ export const inicializeDB = () => {
 
         console.info("Initialize data");
 
-        let file = fs.readFileSync(`${path.join(__dirname, '../data')}/user.json`, 'utf8');
+        let file = fs.readFileSync(`${path.join(__dirname, '../../src/data')}/user.json`, 'utf8');
         const users: IUser[] = JSON.parse(file);
         users.forEach(u => userRepository.save(u));
 
-        file = fs.readFileSync(`${path.join(__dirname, '../data')}/book.json`, 'utf8');;
+        file = fs.readFileSync(`${path.join(__dirname, '../../src/data')}/book.json`, 'utf8');;
         const books: IBook[] = JSON.parse(file);
         books.forEach(b => bookRepository.save(b));
 
