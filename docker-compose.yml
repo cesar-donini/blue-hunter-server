@@ -1,0 +1,17 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - 80:3000
+    environment:
+      - DB_NAME=blue-hunter
+      - DB_CONNECTION_STRING=mongodb://mongo-blue-hunter:27017/blue-hunter
+    links:
+      - mongo-blue-hunter
+  mongo-blue-hunter:
+    image: mongo:latest
+    container_name: "mongo-blue-hunter"
+    volumes:
+      - ./data/db:/data/db
+    command: mongod --smallfiles --logpath=/dev/null
