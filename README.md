@@ -1,25 +1,25 @@
-#Se você for um Dev Frontend
+# Se você for um Dev Frontend
 
-##Build
+## Build
 
-###Para buildar a aplicação com Docker Compose:
+### Para buildar a aplicação com Docker Compose:
 ```
 docker-compose build
 ```
 
-##Execução
+## Execução
 
-###Para executar a aplicação com Docker Compose:
+### Para executar a aplicação com Docker Compose:
 ```
 docker-compose up -d
 ```
 
-###Para executar a aplicação sem Docker:
+### Para executar a aplicação sem Docker:
 ```
 npm start
 ```
 
-##Decisões técnicas
+## Decisões técnicas
 
 <b>Docker:</b> A utilização do Docker foi para facilitar a execução e deploy do projeto.
 
