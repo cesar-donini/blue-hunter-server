@@ -1,6 +1,6 @@
 # Se você for um Dev Backend
 
-## Produção
+## Ambiente
 
 ### Build
 ```
@@ -12,12 +12,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-## Local (desenvolvimento)
-
-### Execução
-```
-npm start
-```
+Acessar: http://localhost:3000/
 
 ## Decisões técnicas
 

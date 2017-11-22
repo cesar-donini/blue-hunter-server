@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-      - 80:3000
+      - 3000:3000
     environment:
       - DB_NAME=blue-hunter
       - DB_CONNECTION_STRING=mongodb://mongo-blue-hunter:27017/blue-hunter
